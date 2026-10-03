@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Home Feed</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="addPost.html">Add Post</a>
+            </div>
+            <a href="login.html" class="login" aria-label="Login">
+                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4" />
+                    <path d="M12 14c-4.42 0-8 2.58-8 6v1h16v-1c0-3.42-3.58-6-8-6z" />
+                </svg>
+            </a>
+        </nav>
+    </header>
+
+    <div class="app-container">
+        <aside class="sidebar-left sidebar">
+        </aside>
+
+        <main class="feed">
+            <article class="post-card">
+                <div class="post-header">
+                    <div class="user-info">
+                        <div class="avatar">IR</div>
+                        <span>Innar Raudsepp</span>
+                    </div>
+                    <span class="post-date">Oct 22, 2026</span>
+                </div>
+
+                <img class="post-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcKlD4mXFggwdlZX_rpuTDvDiGs2n6sMJZvWGIioIKNQ&s=10">
+
+                <p class="post-message">How is this even math anymore????</p>
+
+                <div class="post-footer">
+                    <button class="like-btn" type="button">Like</button>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-header">
+                    <div class="user-info">
+                        <div class="avatar">TM</div>
+                        <span>Trevor Mäe</span>
+                    </div>
+                    <span class="post-date">Oct 22, 2026</span>
+                </div>
+
+                <p class="post-message">Did we have homework today?</p>
+
+                <div class="post-footer">
+                    <button class="like-btn" type="button">Like</button>
+                </div>
+            </article>
+
+        </main>
+
+        <aside class="sidebar-right sidebar">
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 My Website</p>
+    </footer>
+</body>
+</html>
