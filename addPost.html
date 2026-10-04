@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Post</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <header>
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="addPost.html" class="active">addPost</a>
+      </div>
+      <a href="login.html" class="login" title="User Profile / Login">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+        </svg>
+      </a>
+    </nav>
+  </header>
 
+    <main class="app-container form-page">
+    <section class="post-card form-card">
+      <form action="index.html" method="GET" class="post-form">
+        <div class="form-group">
+          <label for="post-body">Post body</label>
+          <textarea id="post-body" name="postBody" placeholder="textarea" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="file-upload">Select file</label>
+          <input type="file" id="file-upload" name="fileUpload">
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="like-btn">Create post</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+    <footer class="footer">
+    <p>Footer</p>
+  </footer>
 </body>
 </html>
