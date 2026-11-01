@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const feedContainer = document.getElementById("posts-feed");
 
-    // Task 4 & 5: Fetching posts data
     async function loadPosts() {
         try {
             /*
