@@ -273,3 +273,54 @@ textarea {
     }
 }
 
+.profile-menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow);
+    width: 200px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 100;
+    text-align: left;
+}
+
+.dropdown-content.hidden {
+    display: none;
+}
+
+.dropdown-name {
+    font-weight: bold;
+    color: var(--text);
+    font-size: 0.95rem;
+}
+
+.dropdown-email {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+}
+
+.dropdown-logout {
+    color: var(--brand);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    padding: 4px 0;
+}
+
+.dropdown-logout:hover {
+    text-decoration: underline;
+}

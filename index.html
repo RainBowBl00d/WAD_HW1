@@ -13,12 +13,20 @@
                 <a href="index.html" class="active">Home</a>
                 <a href="addPost.html">Add Post</a>
             </div>
-            <a href="login.html" class="login" aria-label="Login">
-                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <circle cx="12" cy="8" r="4" />
-                    <path d="M12 14c-4.42 0-8 2.58-8 6v1h16v-1c0-3.42-3.58-6-8-6z" />
-                </svg>
-            </a>
+            <div class="profile-menu-container">
+                <a href="#" id="profile-btn" class="login" title="User Profile">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                </a>
+
+                <!-- Dropdown Menu (Figures 2 & 3) -->
+                <div id="dropdown-menu" class="dropdown-content hidden">
+                    <p class="dropdown-name">John Doe</p>
+                    <p class="dropdown-email">john.doe@ut.ee</p>
+                    <a href="login.html" class="dropdown-logout">Logout</a>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -26,87 +34,7 @@
         <aside class="sidebar-left sidebar">
         </aside>
 
-        <main class="feed">
-            <article class="post-card">
-                <div class="post-header">
-                    <div class="user-info">
-                        <div class="avatar">IR</div>
-                        <span>Innar Raudsepp</span>
-                    </div>
-                    <span class="post-date">Oct 22, 2026</span>
-                </div>
-
-                <img class="post-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcKlD4mXFggwdlZX_rpuTDvDiGs2n6sMJZvWGIioIKNQ&s=10">
-
-                <p class="post-message">How is this even math anymore????</p>
-
-                <div class="post-footer">
-                    <button class="like-btn" type="button">Like</button>
-                </div>
-            </article>
-
-            <article class="post-card">
-                <div class="post-header">
-                    <div class="user-info">
-                        <div class="avatar">TM</div>
-                        <span>Trevor Mäe</span>
-                    </div>
-                    <span class="post-date">Oct 22, 2026</span>
-                </div>
-
-                <p class="post-message">Did we have homework today?</p>
-
-                <div class="post-footer">
-                    <button class="like-btn" type="button">Like</button>
-                </div>
-            </article>
-            <article class="post-card">
-                <div class="post-header">
-                    <div class="user-info">
-                        <div class="avatar">IR</div>
-                        <span>Innar Raudsepp</span>
-                    </div>
-                    <span class="post-date">Oct 22, 2026</span>
-                </div>
-
-                <p class="post-message"> Nah, tomorrows the exam dude. Don't u know?</p>
-
-                <div class="post-footer">
-                    <button class="like-btn" type="button">Like</button>
-                </div>
-            </article>
-            <article class="post-card">
-                <div class="post-header">
-                    <div class="user-info">
-                        <div class="avatar">TM</div>
-                        <span>Trevor Mäe</span>
-                    </div>
-                    <span class="post-date">Oct 22, 2026</span>
-                </div>
-
-                <p class="post-message">No I didn't, welp YOLO it is ig.</p>
-
-                <div class="post-footer">
-                    <button class="like-btn" type="button">Like</button>
-                </div>
-            </article>
-            <article class="post-card">
-                <div class="post-header">
-                    <div class="user-info">
-                        <div class="avatar">IR</div>
-                        <span>Innar Raudsepp</span>
-                    </div>
-                    <span class="post-date">Oct 22, 2026</span>
-                </div>
-
-                <p class="post-message"> gl</p>
-
-                <div class="post-footer">
-                    <button class="like-btn" type="button">1 Like</button>
-                </div>
-            </article>
-
-        </main>
+        <main class="feed" id="posts-feed"></main>
 
         <aside class="sidebar-right sidebar">
         </aside>
@@ -115,5 +43,6 @@
     <footer class="footer">
         <p>&copy; 2026 Hard math problems</p>
     </footer>
+    <script src="renderPosts.js"></script>
 </body>
 </html>
